@@ -1,0 +1,32 @@
+# Changelog
+
+O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
+As versões seguem [SemVer](https://semver.org/lang/pt-BR/).
+
+A tag `vX.Y.Z` em `main` é a única referência que pode ir para o servidor.
+Enviar um commit ao GitHub não publica o site.
+
+## [Unreleased]
+
+## [0.2.1] - 2026-10-21
+
+### Alterado
+
+- O cabeçalho e o ícone do navegador passam a usar a logo do Incor São Lucas.
+
+## [0.2.0] - 2026-10-21
+
+### Adicionado
+
+- Site estático com home, equipe, serviços, convênios e contato na identidade vermelha do Incor São Lucas.
+- Busca na equipe e nos convênios, atalhos da home com destino e formulário que abre o WhatsApp.
+
+## [0.1.0] - 2026-10-21
+
+### Adicionado
+
+- Leitura da identidade visual de www.incorsaolucas.com.br (cor, tipo e páginas). A nota anterior, de outro site, foi substituída.
+- O script de deploy aceita `DEPLOY_PORT` para o SSH que não escuta na porta 22.
+- Documentação de controle de versão e do deploy separado do Git.
+- Esqueleto de `site/` para os arquivos estáticos que uma tag futura publica.
+- Script `scripts/deploy.sh`, que só roda com confirmação explícita e a partir de uma tag.
