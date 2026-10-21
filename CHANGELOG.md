@@ -8,6 +8,11 @@ Enviar um commit ao GitHub não publica o site.
 
 ## [Unreleased]
 
+### Adicionado
+
+- Site estático com home, equipe, serviços, convênios e contato na identidade vermelha do Incor São Lucas.
+- Busca na equipe e nos convênios, atalhos da home com destino e formulário que abre o WhatsApp.
+
 ## [0.1.0] - 2026-10-21
 
 ### Adicionado

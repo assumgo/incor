@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Incor São Lucas</title>
+  <meta name="description" content="Telefone, WhatsApp, webmail e endereço do Incor São Lucas em Goiânia.">
+  <meta name="theme-color" content="#8B0000">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <div class="top">
+    <div class="utility">
+      <div class="wrap utility__inner">
+        <a href="tel:+556239225777">(62) 3922-5777</a>
+        <a href="https://wa.me/556239225777" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="pill" href="http://webmail.incorsaolucas.com.br/" target="_blank" rel="noopener">Webmail</a>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="wrap header__inner">
+        <a class="brand" href="index.html">
+          <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#8B0000"/><path fill="#fff" d="M16 25s-7.2-4.4-7.2-9.2A4.1 4.1 0 0 1 16 13a4.1 4.1 0 0 1 7.2 2.8C23.2 20.6 16 25 16 25z"/></svg>
+          <span><strong>Incor</strong><small>São Lucas</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" class="menu" aria-label="Principal">
+          <a href="index.html">Home</a>
+          <a href="equipe.html">Equipe</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="convenios.html">Convênios</a>
+          <a href="contato.html" aria-current="page">Contato</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main id="conteudo" class="section">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Contato</p>
+        <h1>Fale com a unidade</h1>
+        <p>O formulário abre o WhatsApp com nome, e-mail, telefone e mensagem preenchidos. Não há outro servidor recebendo esses dados.</p>
+        <form id="contato-form" class="form">
+          <div class="form__row">
+            <label>Nome <input name="nome" required autocomplete="given-name"></label>
+            <label>Sobrenome <input name="sobrenome" required autocomplete="family-name"></label>
+          </div>
+          <div class="form__row">
+            <label>E-mail <input name="email" type="email" required autocomplete="email"></label>
+            <label>Telefone <input name="telefone" type="tel" required autocomplete="tel"></label>
+          </div>
+          <label>Mensagem <textarea name="mensagem" required placeholder="Como podemos ajudar?"></textarea></label>
+          <button class="button" type="submit">Enviar pelo WhatsApp</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+      <aside class="panel" id="unidade">
+        <h2>Unidade</h2>
+        <p>Rua 4, número 1315<br>Setor Central<br>Goiânia - Goiás</p>
+        <p><a href="tel:+556239225777">(62) 3922-5777</a></p>
+        <p><a href="https://wa.me/556239225777" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><a href="http://webmail.incorsaolucas.com.br/" target="_blank" rel="noopener">Webmail</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%204%2C%201315%2C%20Setor%20Central%2C%20Goi%C3%A2nia" target="_blank" rel="noopener">Como chegar</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <strong>Incor São Lucas</strong>
+        <span>Rua 4, número 1315</span>
+        <span>Setor Central, Goiânia - GO</span>
+      </div>
+      <div>
+        <a href="tel:+556239225777">(62) 3922-5777</a>
+        <a href="https://wa.me/556239225777" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="http://webmail.incorsaolucas.com.br/" target="_blank" rel="noopener">Webmail</a>
+      </div>
+      <div>
+        <a href="http://www.facebook.com/incorsl" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/incorsaolucas" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <p class="legal">Recriação de estudo a partir do site público. Não é o canal oficial do Incor São Lucas.</p>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
