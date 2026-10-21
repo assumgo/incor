@@ -8,6 +8,8 @@ Enviar um commit ao GitHub não publica o site.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-21
+
 ### Adicionado
 
 - Leitura da identidade visual de www.incorsaolucas.com.br (cor, tipo e páginas). A nota anterior, de outro site, foi substituída.
