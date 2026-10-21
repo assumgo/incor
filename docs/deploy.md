@@ -32,14 +32,15 @@ git fetch origin --tags
 git checkout v0.1.0
 
 export DEPLOY_CONFIRM=sim
-export DEPLOY_USER=ubuntu
+export DEPLOY_USER=root
 export DEPLOY_HOST=203.0.113.10
+export DEPLOY_PORT=2289
 export DEPLOY_PATH=/var/www/incor
 
 ./scripts/deploy.sh
 ```
 
-`DEPLOY_HOST` no exemplo é um IP de documentação, não o servidor real. Troque pelos valores da máquina.
+`DEPLOY_HOST` no exemplo é um IP de documentação, não o servidor real. Troque pelos valores da máquina. `DEPLOY_PORT` é a porta do SSH. Quando omitida, o script usa a 22. No servidor deste estudo o SSH escuta na 2289, e os arquivos caem em `/var/www/incor`.
 
 O script exige árvore limpa, `HEAD` exatamente em uma tag `vX.Y.Z` e `DEPLOY_CONFIRM=sim`. Ele envia o conteúdo de `site/` com `rsync` e não imprime a chave nem grava esses valores no Git.
 

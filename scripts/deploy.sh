@@ -34,9 +34,16 @@ if ! command -v rsync >/dev/null 2>&1; then
   exit 1
 fi
 
-echo "Publicando ${tag} em ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}"
+ssh_port="${DEPLOY_PORT:-22}"
+if [[ ! "${ssh_port}" =~ ^[0-9]+$ ]]; then
+  echo "DEPLOY_PORT precisa ser um número. Atual: ${ssh_port}." >&2
+  exit 1
+fi
+
+echo "Publicando ${tag} em ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH} (SSH ${ssh_port})"
 
 rsync -av --delete \
   --exclude '.gitkeep' \
+  -e "ssh -p ${ssh_port} -o StrictHostKeyChecking=accept-new" \
   "${repo_root}/site/" \
   "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/"
