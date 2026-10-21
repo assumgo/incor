@@ -8,6 +8,12 @@ Enviar um commit ao GitHub não publica o site.
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-21
+
+### Alterado
+
+- O cabeçalho e o ícone do navegador passam a usar a logo do Incor São Lucas.
+
 ## [0.2.0] - 2026-10-21
 
 ### Adicionado

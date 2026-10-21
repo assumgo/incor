@@ -86,18 +86,15 @@ img { max-width: 100%; }
   text-decoration: none !important;
 }
 
-.header__inner { min-height: 76px; justify-content: space-between; }
+.header__inner { min-height: 92px; justify-content: space-between; }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   text-decoration: none;
 }
 
-.brand svg { display: block; }
-.brand strong { display: block; font-size: 1.25rem; letter-spacing: -0.03em; }
-.brand small { display: block; color: var(--brand); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.brand img { display: block; height: 72px; width: auto; }
 
 .nav-toggle {
   display: none;
