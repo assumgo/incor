@@ -1,52 +1,53 @@
 # Identidade visual de referência
 
-Leitura do site público do InCor em 21 de outubro de 2026. A home canônica é `https://www.incor.usp.br/`, que responde 302 para `https://www2.incor.usp.br/sites/incor2024/`. O título é "InCor | Ciência e Humanismo".
+Leitura de `https://www.incorsaolucas.com.br/` em 21 de outubro de 2026. O site é o Incor São Lucas, em Goiânia. A leitura anterior apontava para outro instituto e foi substituída por esta.
 
-Esta nota guarda cor, tipo e estrutura para o estudo. Ela não copia logo, fotografias, fonte licenciada nem texto institucional. A recriação no `site/` será uma interpretação mais atual, não uma réplica dos arquivos deles.
+O site atual é Wix, publicado atrás da Cloudflare. O título da home é "Incor São Lucas | CARDIOLOGISTA GOIÂNIA | Rua 4, número 1315 - Setor Central Goiânia - Goiás".
 
-O site deles roda em Apache com PHP. O nosso continua estático, servido pelo Nginx no Ubuntu Server.
+Esta nota guarda cor, tipo e estrutura. Não copia o logo, as fotos, a lista de convênios nem as fontes comerciais. A recriação em `site/` será uma interpretação mais atual.
 
 ## Cor
 
 | Papel no site atual | Valor |
 | --- | --- |
-| Azul institucional, botão e faixas | `#011689` |
-| Vermelho, hover do botão e destaques | `#cd0e2d` |
-| Ciano dos títulos em bloco | `#22BEF7` |
-| Faixa dos atalhos da home | gradiente `#0a87d1` → `#6bd1ed` |
-| Barra fixa | `#fafaff` |
-| Texto sobre azul, vermelho ou ciano | `#FFFFFF` |
-| Texto corrido e placeholders | `#666666`, `#a1a1a1` |
+| Barra superior, menu, títulos e endereço | `#8B0000` |
+| Fundo das páginas | `#FFFFFF` |
+| Fio sob o logo do rodapé | o mesmo vermelho, em linha fina |
+| Botão Enviar do contato | cinza-azulado escuro |
+| Botão Webmail | cápsula branca sobre a barra vermelha |
 
-O botão padrão no CSS é cápsula azul e fica vermelho no hover. Na home renderizada o ensino usa a cápsula já vermelha, e a Nota Fiscal Paulista usa a cápsula azul. Títulos de seção usam um traço de 6px ao lado do texto (vermelho em Notícias, ciano em Nota Fiscal) ou uma barra que sangra para fora do conteúdo (ciano em Ensino, vermelho em Pesquisa). O rodapé divide o fundo em cerca de 64% vermelho e 36% ciano, com texto branco.
+WhatsApp, Facebook e Instagram usam as cores das próprias marcas. A página não usa uma segunda cor institucional forte: o vermelho carrega a marca e o restante é branco.
 
 ## Tipo
 
-A família declarada é FF Unit Pro: 400 no texto e 700 nos títulos. É uma fonte comercial. O estudo não embute esses arquivos.
+As famílias declaradas no Wix são Open Sans, DIN Next (peso light) e Enriqueta. DIN Next é comercial. O estudo não embute esses arquivos.
 
-Escala vista na home e nos estilos globais:
+No que aparece:
 
-- título de banner: 64px a 68px, peso 700
-- seção: 50px a 56px
-- subtítulo: 38px
-- botão: 26px
-- texto de apoio: 22px a 30px
+- menu e rótulos: caixa alta, espaçamento folgado, vermelho
+- títulos de página, como a equipe: caixa alta, vermelho, centralizados
+- nomes da equipe: vermelho, com um fio curto acima
+- CRM e especialidade: cinza, menor, logo abaixo do nome
+- botões da home no código: Open Sans, 25px
 
-## Home, de cima para baixo
+## O que se repete em todas as páginas
 
-A leitura abaixo junta o HTML publicado com a página renderizada em 1440px e em 390px.
+1. Barra vermelha no topo: telefone `(62) 3922-5777`, "Fale no Whatsapp" e o botão Webmail (`http://webmail.incorsaolucas.com.br/`).
+2. Logo à esquerda (coração, wordmark em script e "São Lucas") e menu à direita: Home, Equipe, Serviços, Convênios, Contato.
+3. No fim, Facebook (`http://www.facebook.com/incorsl`) e Instagram (`https://instagram.com/incorsaolucas`). O WhatsApp abre `https://wa.me/556239225777`.
 
-1. Barra fixa clara. À esquerda, o logo (coração vermelho, wordmark e a linha "Ciência e Humanismo"). No desktop, os itens são Quem somos, Pacientes, Ensino e pesquisa, Doações, Dúvidas frequentes e Transparência, mais as bandeiras de português e inglês. Vários itens abrem painel. No celular a barra vira logo e botão de menu.
-2. Carrossel de ponta a ponta, com seta vermelha. O banner antigo, com título de boas-vindas e campo "Digite aqui para Pesquisar", está comentado no HTML e não aparece. Os slides são campanhas (InCor Digital, alerta de golpes, voluntariado). Desktop e celular usam imagens diferentes.
-3. Seis atalhos na faixa em gradiente, ícone branco, rótulo em caixa alta e um traço vermelho curto: Portal do Paciente InCor, InCor Digital, SUS, Convênio e Particular, Resultados de exames, Atendimento inclusivo. No celular viram grade de duas colunas.
-4. Duas colunas: notícia à esquerda (título com traço vermelho) e Nota Fiscal Paulista à direita (título com traço ciano, botão azul em cápsula). No celular a notícia fica embaixo dos atalhos.
-5. Ensino: foto à esquerda, barra ciano com a palavra "Ensino", bloco azul-escuro, botão vermelho em cápsula.
-6. Pesquisa: barra vermelha que sangra para a esquerda, texto ao lado de foto.
-7. "Cuide da sua saúde", em cartões sobre foto.
-8. Rodapé vermelho e ciano, links, redes, selos em cartão branco e copyright.
+## Páginas
 
-Um controle de acessibilidade fica fixo na borda direita da página.
+**Home.** Foto larga de mesa clínica, com radiografia, estetoscópio e tablet. Abaixo, o logo, um fio vermelho, o endereço em duas linhas (Rua 4, número 1315, Setor Central, Goiânia, Goiás) e as redes. No HTML existem quatro botões de cerca de 220×44 px, em vermelho: Hemodinâmica, Exames, Centro Clínico e Unidades. Na captura desktop eles não formam uma faixa legível sobre a foto, e os quatro links apontam de volta para a própria home.
+
+**Equipe** (`/equipe-1`). Título "Equipe médica", fio horizontal e uma lista centralizada. Cada pessoa tem o nome em vermelho, depois CRM e a especialidade em cinza.
+
+**Serviços** (`/servicos`). Coluna de títulos em vermelho com listas curtas: Hemodinâmica e Angiografia Digital, Neurorradiologia, Angiologia, Ecocardiografia, Ultrassom Vascular, Ultrassom Geral, Cardiologia e Angiologia, Check-up e exames, Arritmia Cardíaca. À direita, fotos de equipamento e uma frase de posicionamento sobre saúde cardiovascular, neurologia e procedimentos de alta complexidade.
+
+**Convênios** (`/convenios`). Lista textual à esquerda e grade de logos à direita.
+
+**Contato** (`/contato`). Formulário com Nome, Sobrenome, Email, Telefone, mensagem e botão Enviar. Abaixo, WhatsApp, logo e o mesmo endereço.
 
 ## O que a recriação muda de propósito
 
-O estudo mantém azul, vermelho e ciano, a barra clara e a ordem da home. A versão nova reduz o excesso de ornamentos (grafismos atrás do título, barras que vazam a tela, texto justificado) e troca a fonte comercial por uma sans geométrica de licença aberta. Logo e fotos do instituto não entram no repositório.
+O estudo fica com o vermelho `#8B0000`, o fundo branco, a barra de contato e as cinco páginas. A versão nova tira o excesso de área vazia, faz os quatro assuntos da home virarem navegação visível e troca a fonte comercial por uma sans de licença aberta. Logo, fotos e lista nominal de convênios não entram no repositório.
