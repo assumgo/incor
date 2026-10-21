@@ -8,6 +8,7 @@ O acesso previsto, enquanto não houver domínio, é direto pelo IP público.
 
 - [Controle de versão](docs/controle-de-versao.md): branches, tags, commits e o que não entra no Git
 - [Deploy](docs/deploy.md): como uma tag chega ao servidor, e somente com autorização
+- [Identidade visual](docs/identidade-visual.md): leitura do site público do InCor, base do estudo
 - [Changelog](CHANGELOG.md): o que cada versão entrega
 
 ## Layout

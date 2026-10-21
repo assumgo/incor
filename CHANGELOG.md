@@ -10,6 +10,7 @@ Enviar um commit ao GitHub não publica o site.
 
 ### Adicionado
 
+- Leitura da identidade visual do site público do InCor (cor, tipo e estrutura da home).
 - Documentação de controle de versão e do deploy separado do Git.
 - Esqueleto de `site/` para os arquivos estáticos que uma tag futura publica.
 - Script `scripts/deploy.sh`, que só roda com confirmação explícita e a partir de uma tag.
