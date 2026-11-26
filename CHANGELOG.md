@@ -8,6 +8,8 @@ Enviar um commit ao GitHub não publica o site.
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-11-26
+
 ### Alterado
 
 - O slide de diagnóstico e a foto da página de contato mostram uma coronariografia no lugar da chapa da coluna.
